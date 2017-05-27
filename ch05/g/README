@@ -1,0 +1,1 @@
+boot.bin加载loader.bin并执行之, loader.bin加载kernel.bin并执行之, kernel.bin完成中断的初始化设置后触发一个中断

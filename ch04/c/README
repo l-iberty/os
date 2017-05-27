@@ -1,0 +1,1 @@
+pm.img作为dos的2号软驱(B盘),调试时将boot.asm编译为boot.com,将boot.com,loader.bin和debug.com利用cptoimg.sh拷贝到pm.img中,在dos下的B盘中利用debug.com进行调试  

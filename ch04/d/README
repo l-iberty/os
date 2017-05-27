@@ -1,0 +1,1 @@
+boot.asm取消_BOOT_DEBUG_宏定义,使用dd if=boot.bin of=a.img bs=512 count=1 conv=notrunc将boot.bin拷贝到软盘的第0扇区,用cptoimg.sh将loader.bin拷贝到a.img,启动系统

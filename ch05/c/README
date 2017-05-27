@@ -1,0 +1,1 @@
+boot.bin位于引导扇区,将loader.bin装载到内存并跳转到loader.bin去执行,loader.bin负责加载kernel.bin到内存. 加载完成后进入无限循环
