@@ -1,0 +1,3 @@
+- `p_proc_ready` 被初始化为指向进程表中的第一个进程, 即`TestA`; `KERNEL`调用main.c中的`kernel_main()`, `kernel_main`完成进程表初始化等工作后调用`kernel.asm`中的`restart`,`restart`最终将启动`p_proc_ready`指向的进程(即`TestA`), 之后将控制权交给进程调度模块——时钟中断例程, 自此开始进程调度
+- 进程调度模块就是时钟中断处理函数`clock_handler`, 每次发生时钟中断时进行进程调度
+- 根据 `schedule()` 的调度算法, `ticks`越大的进程将获得越大的运行机会; 每个进程中的延时操作只是控制着打印自身信息的时间间隔, 真正控制优先级的是进程表中的 `ticks`和`priority`
