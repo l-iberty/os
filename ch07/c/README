@@ -1,0 +1,1 @@
+键盘中断例程keyboard_handler负责将Make Code或Break Code写入缓冲区, 另有任务(进程)tty负责从缓冲区读取Make Code/Break Code并显示. (缓冲区按FIFO规则进行读写)
