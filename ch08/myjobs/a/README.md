@@ -1,0 +1,5 @@
+- 按照书中的描述对`printf`进行了修改, 因为原本的`printf`内部的系统调用`write`与修改后的`sys_call`不兼容(新增的系统调用`sendrec`迫使其修改)
+- `get_ticks`尚未变动, 依然是原先的系统调用
+- 消息机制已经可用, 后续将使用消息机制实现IPC, 以此替换`get_ticks`
+- 本例测试了`assert`宏和`panic`函数
+- 修改了增加消息机制后的进程调度`schedule`
